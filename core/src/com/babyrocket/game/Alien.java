@@ -23,7 +23,7 @@ public class Alien {
 	public void hit(Stone stone) {
 		Vector2 Posstone = stone.getPosition();
 		if(alienPosition.x - Posstone.x > 10 && alienPosition.x + Posstone.x < 10 && alienPosition.y - Posstone.y > 10 && alienPosition.y + Posstone.y <10) {
-			GameScreen.scorce ++;
+			GameScreen.score ++;
 		}
 	}
 	
