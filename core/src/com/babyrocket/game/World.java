@@ -24,17 +24,17 @@ public class World {
 	public static final int TINY_ROCKET_VELOCITY_X = 30;
 	public static final int TINY_ROCKET_VELOCITY_Y = 30;
 	
-	public final TinyRocket tinyRocket;
+	TinyRocket tinyRocket;
 	public final ArrayList<Alien> alienList;
 	public final ArrayList<Asteroid> asteroidList;
-	public final ArrayList<Stone> stoneList;
+	ArrayList<Stone> stoneList;
 	//public final EngineBar;
 	Random random;
 	
 	int stateTime;
 	int gameState;
 
-	public World(BabyRocketGame babyRocketGame, TinyRocket tinyRocket, GameScreen gameScreen) {
+	public World(BabyRocketGame babyRocketGame) {
 		this.alienList = new ArrayList<Alien>();
 		this.asteroidList = new ArrayList<Asteroid>();
 		this.babyRocketGame = babyRocketGame;
